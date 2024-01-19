@@ -1,0 +1,1126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --btn-color: #22878e;
+    --btn:18px;
+    --nav-links:23px;
+    --main-head:40px;
+    --input:20px;
+    --coffe-menu-head:25px;
+    --s-paragraph:16px;
+    --L-paragraph:18px;
+    --menu-name:20px;
+    --menu-rs:18px;
+    --main-font-family:"raleway";
+    --second-font-family:"oswald";
+}
+
+
+
+
+body{
+    overflow-x: hidden;
+}
+/*bg-img1*/
+.bg-img1{
+height: 100vh;
+width: 100%;
+background-image: url(antique-cafe-bg-01.jpg);
+position:relative;
+margin-top: 0vh;
+background-size: cover;
+}
+/*nav-links*/
+.navbar{
+  position:fixed;
+  margin-top: 0;
+  height: 13vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.nav-links{
+    position: fixed;
+    margin-top: ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 55vw; 
+}
+.nav-links li{
+    list-style-type: none; 
+}
+.nav-links li::after{
+    content:'' ;
+    width: 0%;
+    height: 2px;
+    background: #b7ad6a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links li:hover::after{
+    width: 50%;
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: var(--nav-links);
+    color:#bd885a;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    font-family: 'raleway','sanserif';
+    font-weight: bold;  
+}
+
+
+/*black-container1*/
+.black-container1{
+    height: 30vh;
+    width: 30vw;
+    background-color:rgba(0, 0, 0, 0.683) ;
+  position: absolute;
+    margin-top: -80vh;
+    margin-left: 35vw;
+}
+.black-container1-h1{
+    color: white;
+    margin-left: 8vw;
+    margin-top: 5vh;
+    font-size: var(--main-head);
+    font-family:'oswald';
+}
+.black-container1-h2{
+    color:rgb(148,123,100);
+    font-family: 'raleway';
+    font-size: var(--menu-name);
+    margin-top: 2vh;
+    margin-left: 6.5vw;
+    position: absolute;
+    letter-spacing: 1px;
+}
+/*black-container2*/
+.black-container2{
+    height: 35vh;
+    width: 30vw;
+    background-color:rgba(0, 0, 0, 0.683) ;
+   position: absolute;
+    margin-top: -48vh;
+    margin-left:35vw; 
+}
+.black-container2-p{
+    color:#c3bfbf;
+    font-family: "raleway";
+    font-size: var(--s-paragraph);
+    margin-top: 6vh;
+    margin-left: 2vw;
+    margin-right: 1vw;
+    line-height: 30px;
+}
+.span1{
+    color:#b7ad6a;
+    margin-left: 8px;
+}
+/*black-container3*/
+.black-container3{
+    height: 10vh;
+    width: 15vw;
+    background-color: rgba(0, 0, 0, 0.683);
+    position: absolute;
+    margin-top:-11vh;
+    margin-left: 42vw;
+    border-radius: 5px;
+   
+}
+.black-container3-h1 li{
+   list-style-type: none;
+   margin-left: 2vw;
+   padding-top: 3vh;
+}
+.black-container3-h1 li a{
+    text-decoration: none;
+    color: #bd885a;
+    font-family: 'raleway';
+    font-weight: bold;
+    font-size: var(--s-paragraph);
+  
+}
+.black-container3-h1 li a i{
+    padding-right: 10px;
+}
+.black-container3-h1 li :hover{
+    color: white;
+    opacity: 0.8;
+}
+
+/*section-2*/
+
+
+.bg-img2 {
+   background-image: url(antique-cafe-bg-02.jpg);
+    height: 130vh;
+    width: 100%;
+   
+    background-size: contain;
+   
+}
+/*menu-head*/
+.menu-head{
+    height: 10vh;
+    width: 16vw;
+  background-color: white;
+   position:absolute;
+    margin-top: 1vh;
+    margin-left:38vw;
+    font-family: 'raleway';
+    font-size:var(--coffe-menu-head);
+    padding-top: 15px;
+    padding-left: 10px;
+    color:rgba(85,70,55,255);
+    font-weight: bold;
+    border-radius: 10px;
+}
+/*menu-container1*/
+.menu-container1{
+    height: 90vh;
+    width: 36vw;
+    background-color:#584434;
+    border-radius: 10px;
+    margin-left: 12vw;
+position: absolute;
+    margin-top: 15vh;
+}
+/*menu-container1-images*/
+.menu-img1 img{
+    height: 18vh;
+    width: 12vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.menu-img2 img{
+    height: 18vh;
+    width: 12vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.menu-img3 img{
+    height: 18vh;
+    width: 12vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.menu-img4 img{
+    height: 18vh;
+    width: 12vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+/*menu-container1-text*/
+.menu-container1-text1{
+    margin-left: 2vw;
+margin-top: 1vh;
+    margin-top: 2vh;
+    font-size:var(--menu-name);
+    font-family: 'raleway';
+    line-height: 32px;
+    color:#cd9f50;
+    font-weight: bold;
+    position: absolute;
+   
+  
+}
+.menu-container1-text2{
+    margin-left: 19vw;
+position: absolute;
+    font-size: var(--menu-rs);
+    margin-top: -13vh;
+   font-family: 'raleway';
+   line-height: 32px;
+   color: #c3bfbf;
+}
+/*menu-container2*/
+.menu-container2{
+height: 90vh;
+width: 36vw;
+background-color: #584434;
+border-radius: 10px;
+margin-left: 51vw;
+position: absolute;
+margin-top: -115vh;}
+/*menu-container2-images*/
+.menu-img5 img{
+    border-radius: 10px;
+    height: 18vh;
+    width: 12vw;
+    margin-left: 20vw;
+    margin-top: 2vh;
+}
+.menu-img6 img{
+    border-radius: 10px;
+    height: 18vh;
+    width: 12vw;
+    margin-left: 20vw;
+    margin-top: 2vh;
+}
+.menu-img7 img{
+    border-radius: 10px;
+    height: 18vh;
+    width: 12vw;
+    margin-left:20vw;
+    margin-top: 2vh;
+}
+.menu-img8 img{
+    border-radius: 10px;
+    height: 18vh;
+    width: 12vw;
+    margin-left: 20vw;
+    margin-top:2vh;
+}
+/*menu-container2-text*/
+.menu-container2-text1{
+    margin-left: 8vw;
+   position: absolute;
+    margin-top: -19vh;
+    font-size:var(--menu-name);
+    font-family: 'raleway';
+    line-height: 32px;
+    color:#cd9f50;
+    font-weight: bold;
+}
+
+
+.menu-container2-text2{
+    margin-left: 13vw;
+    position: absolute;
+    font-size: var(--menu-rs);
+    margin-top: -12vh;
+   font-family: 'raleway';
+   line-height: 32px;
+   color: #c3bfbf;
+   font-weight: bold;
+  
+}
+.menu-container2-text3{
+    margin-left: 11.4vw;
+    position: absolute;
+    font-size: var(--menu-rs);
+    margin-top: -12vh;
+   font-family: 'raleway';
+   line-height: 32px;
+   color: #c3bfbf;
+   font-weight: bold;
+  
+}
+.menu-container2-text4{
+    margin-left: 12.6vw;
+    position: absolute;
+    font-size: var(--menu-rs);
+    margin-top: -12vh;
+   font-family: 'raleway';
+   line-height: 32px;
+   color: #c3bfbf;
+   font-weight: bold;
+}
+.menu-container2-text5{
+    margin-left: 6.5vw;
+    position: absolute;
+    font-size: var(--menu-rs);
+    margin-top: -10vh;
+   font-family: 'raleway';
+   line-height: 32px;
+   color: #c3bfbf;
+   font-weight: bold;
+  
+}
+span{
+    margin-left: 1.8vw;
+    font-weight: bold;
+}
+/*bg-img3*/
+
+.bg-img3{
+background-image: url(antique-cafe-bg-03.jpg);
+ margin-top: -0vh;
+   height: 100vh;
+   width: 100%;
+   background-size: cover;
+   margin-left: 0;
+
+}
+/*about-conatiner*/
+.about-container{
+    height: 60vh;
+    width: 37vw;
+    background-color:rgba(245, 245, 245, 0.847);
+position: absolute;
+    margin-top: 15vh;
+    margin-left: 60vw;
+    border-radius: 10px;
+}
+.about-container-h1{
+    font-family: "raleway";
+    color:var(--btn-color);
+    font-size: var(--main-head);
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-left: 3vw;
+   
+}
+.about-container-p1{
+    color: black;
+    margin-left: 3vw;
+    font-family: "raleway";
+    margin-top: 5vh;
+    font-size: var(--L-paragraph);
+    line-height: 30px;
+    font-weight: bold;
+    width: 32vw;
+    opacity: 0.8;
+}
+.about-container-p2{
+    color:black;
+    margin-left: 3vw;
+    font-family: "raleway";
+    margin-top: 5vh;
+    font-size: var(--L-paragraph);
+    line-height: 30px; 
+    font-weight: bold;
+    width: 33vw;
+    opacity: 0.8;
+}
+.supportus{
+    color: #20666b;
+    margin-left: .5vw;
+}
+/*contact-box*/
+.contact-box{
+   height: 8vh;
+   width: 13vw;
+   background-color:var(--btn-color);
+   margin-left: 60vw;
+   margin-top: -15vh;
+   border-radius: 10px;
+   position: absolute;
+
+}
+.contact-box:hover{
+    background-color:#22878e;
+}
+.contact li{
+    list-style-type: none;
+}
+.contact li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 2vw;
+    font-family: "raleway";
+    padding-top: 2vh;
+    font-weight: bold;
+}
+.contact li  i{
+    color: white;
+    font-size: var(--btn);
+    padding-left: 2vw;
+    padding-top: 2vh;
+    
+}
+/*bg-img4*/
+.bg-img4{
+    background-image: url(antique-cafe-bg-04.jpg);
+    height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    
+}
+/*contactus -container*/
+.contactus-container{
+    height: 73vh;
+    width: 37vw;
+    background-color:rgba(245, 245, 245, 0.847);
+position: absolute;
+    margin-top: 13vh;
+    margin-left: 15vw;
+    border-radius: 10px; 
+}
+.contactus-container-h1{
+    color:#22878e;
+    font-family: "raleway";
+    font-weight: bold;
+    margin-top: 8vh;
+    margin-left: 5vw;
+
+}
+.contactus-container-p{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-family: "raleway";
+    font-size: var(--L-paragraph);
+    line-height: 28px;
+    font-weight: bold;
+   color:black;
+   opacity: 0.8;
+   width: 30vw;
+}
+.tel{
+    color: black;
+    margin-left: 5vw;
+    font-size: 16px;
+    font-family: "raleway";
+    margin-top: 5vh;
+    opacity: 0.8;
+}
+.tel1{
+    color: #20666b;
+    margin-left: 1vw;
+}
+.email{
+    color: black;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    font-family: "raleway";
+    font-size: 16px;
+    opacity: 0.8;
+}
+.email1{
+    color: #20666b;
+    margin-left: 1vw;
+}
+/*map-box*/
+.location-box{
+    height: 10vh;
+    width: 15vw;
+    background-color:var(--btn-color);
+    border-radius: 5px;
+    margin-left: 8vw;
+    margin-top: 7vh;
+
+}
+.location-box:hover{
+    background-color: #22878e;
+}
+.location li{
+    list-style-type: none;
+    padding-top: 3vh;
+    padding-left: 1vw;
+}
+.location li a{
+    text-decoration: none;
+   color: white;
+   font-family: "raleway";
+   font-size: var(--btn);
+   font-weight: bold;
+}
+.location li i{
+    padding-right: 2vw;
+    padding-left: 1vw;
+}
+/* form-page-container*/
+form{
+    height:73vh;
+    width: 37vw;
+    background-color: rgba(0, 0, 0, 0.683);
+    margin-left: 60vw;
+    margin-top: 13vh;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: var(--input);
+    color: white;
+    margin-left: 5vw;
+    opacity: 0.8;
+    font-family: "raleway";
+    margin-top: 5vh;
+}
+input{
+    width: 30vw;
+ margin-top: 2vh;
+ margin-left: 5vw;
+ margin-bottom: 5vh;
+   border: none;
+   outline: none;
+   background: transparent;
+   border-bottom: 1px solid #cd9f50;
+}
+.message input{
+    margin-top: 20vh;
+}
+.send{
+    font-family: "raleway";
+    color: white;
+    margin-left: 31vw;
+    font-size: 20px;
+    margin-top: -1vh;
+}
+.copyright{
+    font-family: "raleway";
+    font-size: 20px;
+    margin-top: 10vh;
+    margin-left: -40vw;
+    
+}
+.design-tooplate{
+    margin-top: -4vh;
+    font-size: 20px;
+    margin-left: 10vw;
+    font-family: "raleway";
+}
+#menu-btn{
+    display: none;
+    font-size: 20px;
+}
+#check{
+    display: none;
+}
+/*---------------------*/
+@media screen and (max-width:576px){
+
+    .bg-img1{
+        height: 150vh;
+        width: 100%;
+        background-image: url(antique-cafe-bg-01.jpg);
+        position:relative;
+        margin-top: -28vh;
+       
+        }
+        /*nav-links*/
+        
+        .nav-links{
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            background-color:rgba(0, 0, 0, 0.683);
+            top: 25vh;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            height: 30vh;
+            width: 100%;
+            margin-left: 0;
+        }
+        .nav-links li{
+            list-style-type: none;
+          padding-top: 2vh;
+          
+        }
+        .nav-links li a{
+         text-decoration: none;
+            font-size: 18px;
+            color:#bd885a;
+            padding-left: 4vw;
+            padding-top: 2vh;
+            font-family: 'raleway','sanserif';
+            font-weight: bold;  
+        }
+        #menu-btn{
+            display: block;
+           margin-top: 50vh;
+           margin-left: 80vw;
+           cursor: pointer;
+          
+        }
+        #check:checked~.nav-links{
+            display: flex;
+           
+        }
+        /*black-container1*/
+        .black-container1{
+            height: 20vh;
+            width: 80vw;
+            background-color:rgba(0, 0, 0, 0.683) ;
+          position: absolute;
+            margin-top: -93vh;
+            margin-left: 10vw;
+        }
+        .black-container1-h1{
+            color: white;
+            margin-left: 15vw;
+            margin-top: 3vh;
+            font-size: 35px;
+            font-family:'oswald';
+        }
+        .black-container1-h2{
+            color:rgb(148,123,100);
+            font-family: 'raleway';
+            font-size: 15px;
+            margin-top: 2vh;
+            margin-left: 12vw;
+            position: absolute;
+            letter-spacing: 1px;
+        }
+        /*black-container2*/
+        .black-container2{
+            height: 35vh;
+            width: 80vw;
+            background-color:rgba(0, 0, 0, 0.683) ;
+           position: absolute;
+            margin-top: -71vh;
+            margin-left:10vw; 
+        }
+        .black-container2-p{
+            color:#c3bfbf;
+            font-family: "raleway";
+            font-size: 11px;
+            margin-top: 6vh;
+            margin-left: 8vw;
+            margin-right: 2vw;
+            line-height: 30px;
+        }
+        .span1{
+            color:#b7ad6a;
+        }
+        /*black-container3*/
+        .black-container3{
+            height: 10vh;
+            width: 50vw;
+            background-color: rgba(0, 0, 0, 0.683);
+            position: absolute;
+            margin-top:-33vh;
+            margin-left: 25vw;
+            border-radius: 5px;
+           
+        }
+        .black-container3-h1 li{
+           list-style-type: none;
+           margin-left: 10vw;
+           padding-top: 3vh;
+        }
+        .black-container3-h1 li a{
+            text-decoration: none;
+            color: #bd885a;
+            font-family: 'raleway';
+            font-weight: bold;
+            font-size: 15px;
+          
+        }
+        .black-container3-h1 li a i{
+            padding-right: 10px;
+        }
+        /*bg-img2*/
+        
+        .bg-img2 {
+           background-image: url(antique-cafe-bg-02.jpg);
+            height: 150vh;
+            width: 100%;
+           
+            background-size: contain;
+           
+        }
+        /*menu-head*/
+        .menu-head{
+            height: 5vh;
+            width: 30vw;
+          background-color: white;
+           position:absolute;
+            margin-top: 28vh;
+            margin-left: 27vw;
+            font-family: 'raleway';
+            font-size: 10px;
+            padding-top: 10px;
+            padding-left: 12px;
+            color:rgba(85,70,55,255);
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        /*menu-container1*/
+        .menu-container1{
+            height: 70vh;
+            width: 43vw;
+            background-color:#584434;
+            border-radius: 10px;
+            margin-left: 4vw;
+        position: absolute;
+            margin-top: 35vh;
+        }
+        /*menu-container1-images*/
+        .menu-img1 img{
+            height: 12vh;
+            width: 12vw;
+            border-radius: 10px;
+            margin-left: 2vw;
+            margin-top: 2vh;
+        }
+        .menu-img2 img{
+            height: 12vh;
+            width: 12vw;
+            border-radius: 10px;
+            margin-left: 2vw;
+            margin-top: 2vh;
+        }
+        .menu-img3 img{
+            height: 12vh;
+            width: 12vw;
+            border-radius: 10px;
+            margin-left: 2vw;
+            margin-top: 2vh;
+        }
+        .menu-img4 img{
+            height: 12vh;
+            width: 12vw;
+            border-radius: 10px;
+            margin-left: 2vw;
+            margin-top: 2vh;
+        }
+        
+        /*menu-container1-text*/
+        .menu-container1-text1{
+            margin-left: 3vw;
+        margin-top: 1vh;
+            
+            font-size:12px;
+            font-family: 'raleway';
+            line-height: 32px;
+            color:#cd9f50;
+            font-weight: bold;
+            position: absolute;
+           
+          
+        }
+        .menu-container1-text2{
+            margin-left: 19vw;
+        position: absolute;
+            font-size: 10px;
+            margin-top: -10vh;
+           font-family: 'raleway';
+           line-height: 20px;
+           color: #c3bfbf;
+        }
+        /*menu-container2*/
+        .menu-container2{
+        height: 70vh;
+        width: 43vw;
+        background-color: #584434;
+        border-radius: 10px;
+        margin-left: 48vw;
+        position: absolute;
+        margin-top: -115vh;}
+        /*menu-container2-images*/
+        .menu-img5 img{
+            border-radius: 10px;
+            height: 12vh;
+            width: 12vw;
+            margin-left: 28vw;
+            margin-top: 2vh;
+        }
+        .menu-img6 img{
+            border-radius: 10px;
+            height: 12vh;
+            width: 12vw;
+            margin-left: 28vw;
+            margin-top: 2vh;
+        }
+        .menu-img7 img{
+            border-radius: 10px;
+            height: 12vh;
+            width: 12vw;
+            margin-left:28vw;
+            margin-top: 2vh;
+        }
+        .menu-img8 img{
+            border-radius: 10px;
+            height: 12vh;
+            width: 12vw;
+            margin-left: 28vw;
+            margin-top:2vh;
+        }
+        /*menu-container2-text*/
+        .menu-container2-text1{
+            margin-left: 3vw;
+           position: absolute;
+            margin-top: -14vh;
+            font-size:12px;
+            font-family: 'raleway';
+            line-height: 32px;
+            color:#cd9f50;
+            font-weight: bold;
+        }
+        
+        
+        .menu-container2-text2{
+            margin-left: 13vw;
+            position: absolute;
+            font-size: 10px;
+            margin-top: -9vh;
+           font-family: 'raleway';
+           line-height: 20px;
+           color: #c3bfbf;
+           font-weight: bold;
+          
+        }
+        .menu-container2-text3{
+            margin-left: 10vw;
+            position: absolute;
+            font-size: 10px;
+            margin-top: -9vh;
+           font-family: 'raleway';
+           line-height: 20px;
+           color: #c3bfbf;
+           font-weight: bold;
+          
+        }
+        .menu-container2-text4{
+            margin-left: 13vw;
+            position: absolute;
+            font-size: 10px;
+            margin-top: -9vh;
+           font-family: 'raleway';
+           line-height: 20px;
+           color: #c3bfbf;
+           font-weight: bold;
+        }
+        .menu-container2-text5{
+            margin-left: 3vw;
+            position: absolute;
+            font-size: 10px;
+            margin-top: -7vh;
+           font-family: 'raleway';
+           line-height: 30px;
+           color: #c3bfbf;
+           font-weight: bold;
+          
+        }
+        span{
+            margin-left: 1.8vw;
+            font-weight: bold;
+        }
+        /*bg-img3*/
+        
+        .bg-img3{
+        background-image: url(antique-cafe-bg-03.jpg);
+        background-size:cover;
+           height: 100vh;
+           width: 100%;
+           margin-top: 0vh;
+          
+          
+        
+        }
+        /*about-conatiner*/
+        .about-container{
+            height: 40vh;
+            width: 85vw;
+            background-color:rgba(245, 245, 245, 0.847);
+        position: absolute;
+            margin-top: 35vh;
+            margin-left: 5vw;
+            border-radius: 10px;
+        }
+        .about-container-h1{
+            font-family: "raleway";
+            color:#20666b;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 3vh;
+            margin-left: 5vw;
+           
+        }
+        .about-container-p1{
+            color: black;
+            margin-left: 5vw;
+            font-family: "raleway";
+            margin-top: 1vh;
+            font-size: 10px;
+          width: 70vw;
+            line-height: 15px;
+            font-weight: bold;
+            text-align: justify;
+        }
+        .about-container-p2{
+            color:black;
+            margin-left: 5vw;
+            font-family: "raleway";
+            margin-top: 2vh;
+            font-size: 10px;
+            line-height: 15px; 
+            font-weight: bold;
+            width: 71vw;
+        }
+        .supportus{
+            color: #20666b;
+            margin-left: .5vw;
+        }
+        /*contact-box*/
+        .contact-box{
+           height: 6vh;
+           width: 25vw;
+           background-color: #20666b;
+           margin-left: 10vw;
+           margin-top: -18vh;
+           border-radius: 10px;
+           position: absolute;
+        
+        }
+        .contact li{
+            list-style-type: none;
+            margin-top: .4vh;
+            margin-left: 1vw;
+        }
+        .contact li a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            font-family: "raleway";
+            font-weight: bold;
+        }
+        .contact li  i{
+            color: white;
+            font-size: 10px;    
+        }
+        /*bg-img4*/
+        .bg-img4{
+            background-image: url(antique-cafe-bg-04.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+        }
+        /*contactus -container*/
+        .contactus-container{
+            height: 40vh;
+            width: 43vw;
+            background-color:rgba(245, 245, 245, 0.847);
+        position: absolute;
+            margin-top: 35vh;
+            margin-left: 2vw;
+            border-radius: 10px; 
+        }
+        .contactus-container-h1{
+            color: #20666b;
+            font-family: "raleway";
+            font-weight: bold;
+            margin-top: 5vh;
+            margin-left: 2vw;
+            font-size: 20px;
+        
+        }
+        .contactus-container-p{
+            margin-top: 2vh;
+            margin-left: 2vw;
+            font-family: "raleway";
+            font-size: 8px;
+            line-height: 15px;
+            font-weight: bold;
+           color:black;
+           width: 40vw;
+        }
+        .tel{
+            color: black;
+            margin-left: 2vw;
+            font-size: 8px;
+            font-family: "raleway";
+            margin-top: 1vh;
+        }
+        .tel1{
+            color: #20666b;
+            margin-left: 1vw;
+        }
+        .email{
+            color: black;
+            margin-left: 2vw;
+            margin-top: 1vh;
+            font-family: "raleway";
+            font-size: 8px;
+        }
+        .email1{
+            color: #20666b;
+            margin-left: 1vw;
+        }
+        /*map-box*/
+        .location-box{
+            height: 5vh;
+            width: 25vw;
+            background-color: #20666b;
+            border-radius: 5px;
+            margin-left: 2vw;
+            margin-top: 2vh;
+        
+        }
+        .location li{
+            list-style-type: none;
+            padding-top: 1vh;
+            padding-left: 1vw;
+        }
+        .location li a{
+            text-decoration: none;
+           color: white;
+           font-family: "raleway";
+           font-size: 10px;
+           font-weight: bold;
+        }
+        .location li i{
+            padding-right: 2vw;
+            padding-left: 1vw;
+        }
+        /* form-page-container*/
+        form{
+            height:40vh;
+            width: 43vw;
+            background-color: rgba(0, 0, 0, 0.683);
+            margin-left: 50vw;
+            margin-top: 35vh;
+            position: absolute;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-size: 10px;
+            color: white;
+            margin-left: 5vw;
+            opacity: 0.8;
+            font-family: "raleway";
+            margin-top: 1vh;
+        }
+        input{
+            width: 30vw;
+         margin-top: 1vh;
+         margin-left: 5vw;
+         margin-bottom: 1vh;
+           border: none;
+           outline: none;
+           background: transparent;
+           border-bottom: 1px solid #cd9f50;
+        }
+        .message input{
+            margin-top: 7vh;
+        }
+        .send{
+            font-family: "raleway";
+            color: white;
+            margin-left: 26vw;
+            font-size: 10px;
+            margin-top: 1vh;
+        }
+        .copyright{
+            font-family: "raleway";
+            font-size: 8px;
+            margin-top: 9vh;
+            margin-left: -48vw;
+            
+        }
+        .design-tooplate{
+            margin-top: -1vh;
+            font-size: 8px;
+            margin-left: 10vw;
+            font-family: "raleway";
+        }
+
+}
