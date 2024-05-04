@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --btn-color: #22878e;
+    --btn:18px;
+    --nav-links:23px;
+    --main-head:40px;
+    --input:20px;
+    --coffe-menu-head:25px;
+    --s-paragraph:16px;
+    --L-paragraph:18px;
+    --menu-name:20px;
+    --menu-rs:18px;
+    --main-font-family:"raleway";
+    --second-font-family:"oswald";
+}
+/***********
+  header
+  *********/
+
+  .navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+position: fixed;
+top: 0;
+z-index: 999;
+ 
+  }
+  .nav-links{
+      
+      align-items:center;
+      display: flex;
+      justify-content:space-evenly;
+      width: 50%;
+
+        
+  }
+  .logo{
+    width:20%;
+  }
+  .nav-links li{
+      list-style-type: none; 
+  }
+  .nav-links li::after{
+      content:'' ;
+      width: 0%;
+      height: 2px;
+      background: #b7ad6a;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+  }
+  .nav-links li:hover::after{
+      width: 100%;
+      color: black;
+  }
+  .nav-links li a{
+      text-decoration: none;
+      font-size: var(--nav-links);
+      color:#bd885a;
+      font-family: 'raleway','sanserif';
+      font-weight: bold;  
+  }
+  .nav-links li a:hover{
+    color:#b7ad6a;
+  }
+  #menu-btn{
+    display: none;
+    font-size: 15px;
+    padding: 10px;
+color: #b7ad6a;
+
+   
+}
+#check{
+    display: none;
+}
+  @media only  screen and (max-width:500px) and (min-width:200px){
+    .navbar{
+        background-color:#584434;
+
+    }
+     .nav-links{
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        background-color:#584434;
+        top:48px;
+        flex-direction: column;
+        display: none;
+        height: 30vh;
+        width: 100%;
+        padding: 20px;
+
+    }
+    .nav-links li a{
+        font-size: 14px;
+  
+    }
+    #menu-btn{
+        display: block;
+        cursor: pointer;
+      
+    }
+    #check:checked~.nav-links{
+        display: flex;
+       
+    }
+  }
+  /**************
+  home section
+  **************/
+
+  #home{
+    background-image: url(images/antique-cafe-bg-01.jpg);
+    width: 100%;
+ background-repeat: no-repeat;
+ height: 110vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  
+
+  }
+  #home .container{
+    padding: 450px;
+  }
+  #home .box{
+    background-color: rgba(0, 0, 0, 0.683);
+  }
+  #home .box1{
+
+    text-align: center;
+    margin: 10px;
+    padding: 30px 40px;
+   
+  }
+  #home .box1 h1{
+    font-size: var(--main-head);
+    font-family: "oswald";
+    color: white;
+  }
+  #home .box1 h3{
+    color: #bd885a;
+    font-family: "Raleway";
+  }
+#home .box2{
+    margin: 10px;
+    padding: 30px 40px;
+    color: rgba(255, 255, 255, 0.588);
+    font-family: "raleway";
+    font-weight: bold;
+    line-height: 30px;
+}
+#home span{
+    color: rgba(203, 203, 87, 0.358);
+}
+#home .box3{
+margin:0 90px;
+border-radius: 10px;
+}
+#home .box3 h6{
+    color: #bd885a;
+    padding: 20px 10px;
+    font-family: "raleway";
+    font-size: var(--btn);
+    text-align: center;   
+}
+#home .box3 h6 i{
+    padding-right:10px;
+}
+#home .box3 h6:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+
+    #home .container{
+       padding: 200px 10px;
+    }
+
+    #home .box1 h1{
+        font-size:18px;
+    }
+    #home .box1 h3{
+        font-size: 15px;
+    }
+    #home .box2 p{
+        font-size: 12px;
+    }
+    #home .box3 h6{
+        font-size: 13px;
+        padding: 10px 10px;
+
+    }
+    #home .box3{
+        margin: 0 40px;
+    }
+}
+/**************
+Menu
+**************/
+#menu{
+    background-image: url(images/antique-cafe-bg-02.jpg);
+padding-bottom: 200px;
+padding-top: 50px;
+width: 100%;
+background-repeat: no-repeat;
+font-family: "raleway";
+font-weight: bold;
+}
+#menu img{
+   
+    display: flex;
+border-radius: 20px;
+   padding: 10px;
+
+}
+
+#menu h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+ margin: 0 500px;
+ font-family: "Raleway";
+ font-size: var(--coffe-menu-head);
+    
+}
+.menu-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+padding: 40px 80px;
+}
+
+.menu-container  .container {
+     border-radius: 10px;
+    background-color:#584434 ;
+padding: 0 50px;
+
+   
+}
+.container1{
+    text-align: start;
+}
+.container2{
+    text-align: end;
+}
+.menu-container .container div{
+
+    display: flex;
+    justify-content:space-between;
+}
+.menu-container .container span{
+    padding: 30px;
+    color: white;
+}
+.menu-container .container .menu-name{
+    color:#b7ad6a;
+    font-size: var(--menu-rs);
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+#menu{
+    padding: 100px 0;
+}
+
+    #menu img{
+    display: flex;
+     height: 120px;
+    width:100px;
+     padding-top: 20px;
+    }
+    
+    #menu h2{
+    margin: 0 20px;   
+    text-align: center;  
+    }
+    .menu-container {
+     flex-direction: column;
+ padding: 10px ;
+    }
+
+    
+    .menu-container  .container {
+       border-radius: 10px;
+       width: 100%;
+       padding: 10px 30px;
+       margin-top: 10px;
+    }
+     .menu-container .container .menu-name{
+
+        font-size:15px;
+    }
+    .menu-container .container span{
+        padding: 10px;
+    }
+}
+
+/*****************
+ about  section
+ ****************/
+
+ #about{
+    background-image: url(images/antique-cafe-bg-03.jpg);
+padding: 120px;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items:last baseline;
+margin-top: -20vh;
+
+ }
+ #about span{
+    color: #22878e;
+ }
+ .about{
+    background-color: rgba(255, 255, 255, 0.659);
+    width: 45%;
+     border-radius: 10px;
+ }
+.about h2{
+    color: #22878e;
+    font-size: var(--main-head);
+    font-family: "raleway";
+    font-weight: bold;
+    padding: 10px 30px;
+}
+.about p{
+    font-size: var(--L-paragraph);
+    font-family: "Raleway";
+    font-weight: bold;
+    color: black;  
+    padding: 30px 30px;
+    line-height: 30px;
+}
+#about h5{
+background-color: #22878e;
+color: white;
+padding: 10px 20px;
+border-radius: 10px;
+font-family: "raleway";
+font-size: var(--btn);
+margin: 20px;
+}
+#about h5:hover{
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about h5 i{
+    padding-right: 20px;
+}
+@media only screen  and (max-width:500px) and (min-width:200px){
+#about{
+    padding: 120px 10px;
+}
+.about p{
+    font-size: 15px;
+}
+.about{
+    width: 100%;
+margin-top: 20px;
+}
+#about h5{
+padding: 10px;
+}
+#about h5 i{
+    padding-right: 5px;
+}
+}
+/**********************
+contact section
+**********************/
+#contact {
+    background-image: url(images/antique-cafe-bg-04.jpg);
+padding: 100px;
+background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.contact
+{
+    background-color: rgba(255, 255, 255, 0.588);
+width: 45%;
+
+padding: 20px 30px;
+    border-radius: 10px;
+
+}
+.contact p{
+    font-size: var(--L-paragraph);
+    color: rgba(0, 0, 0, 0.683);
+    font-family: "Raleway";
+    font-weight: bold;
+    padding: 20px 30px ;
+    border-radius:10px ;
+}
+.contact span{
+    color: #22878e;
+}
+.contact button{
+    background-color: #22878e;
+    padding: 10px 20px;
+     border: none;
+    border-radius: 10px;
+    margin: 30px;
+}
+.contact button a{
+    text-decoration: none;
+    color: white;
+    font-size: var(--btn);
+   
+}
+.contact button a:hover{
+    color: black;
+    transition: 0.5s;
+}
+.contact button i{
+    padding-right: 20px;
+}
+.form{
+    background-color: rgba(0,0,0,0.5);
+   width: 45%;
+
+    border-radius: 10px;
+    font-family: "raleway";
+padding: 20px 30px;
+    font-weight: bold;
+    
+}
+.form div{
+    padding-top: 30px;
+}
+label{
+    color:white;
+    font-size: var(--input);
+
+}
+input{
+    color: #b7ad6a;
+}
+input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #b7ad6a;
+    width: 100%;
+    padding: 10px 0;
+}
+.msg input{
+    padding-top: 20px;
+}
+.form p {
+text-align: end;
+padding-top: 20px;
+color: white;
+}
+footer{
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    background-color:black;
+    color: white;
+    text-align: end;
+    padding: 10px;
+    font-family: "oswald";
+}
+
+@media only screen and (max-width:500px) and (min-width:200px){
+    #contact{
+
+        flex-direction: column;
+       padding: 100px 10px ;
+      
+    }
+    .contact{
+        width: 100%;
+        margin: 10px;
+        padding: 20px 20px;
+    }
+    .form{
+        width: 100%;
+        margin: 10px;
+
+    }
+   label
+   {
+    font-size:14px ;
+   }
+   footer{
+    text-align: center;
+   }
+   .msg input{
+    padding-top: 40px;
+}
+}
+
+
+
